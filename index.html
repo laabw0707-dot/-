@@ -1,7 +1,8 @@
-<!doctype html><html><head><meta charset=utf8><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0f5a48"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><script src="storage.js"></script><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 130 130%22%3E%3Crect width=%22130%22 height=%22130%22 rx=%2230%22 fill=%22%230f5a48%22/%3E%3Cpath d=%22M34 66V90C34 99 50 106 65 106C80 106 96 99 96 90V66L65 82Z%22 fill=%22%2317806a%22 stroke=%22%23e3be6a%22 stroke-width=%224%22 stroke-linejoin=%22round%22/%3E%3Cpath d=%22M65 26L116 52L65 78L14 52Z%22 fill=%22%23e3be6a%22 stroke=%22%23e3be6a%22 stroke-width=%224%22 stroke-linejoin=%22round%22/%3E%3Cpath d=%22M108 58V88%22 stroke=%22%23e3be6a%22 stroke-width=%225%22 stroke-linecap=%22round%22/%3E%3Ccircle cx=%22108%22 cy=%2292%22 r=%226%22 fill=%22%23e3be6a%22/%3E%3C/svg%3E"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+<!doctype html><html><head><meta charset=utf8><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0f5a48"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="رفيق"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><script src="storage.js"></script><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 130 130%22%3E%3Crect width=%22130%22 height=%22130%22 rx=%2230%22 fill=%22%230f5a48%22/%3E%3Cpath d=%22M34 66V90C34 99 50 106 65 106C80 106 96 99 96 90V66L65 82Z%22 fill=%22%2317806a%22 stroke=%22%23e3be6a%22 stroke-width=%224%22 stroke-linejoin=%22round%22/%3E%3Cpath d=%22M65 26L116 52L65 78L14 52Z%22 fill=%22%23e3be6a%22 stroke=%22%23e3be6a%22 stroke-width=%224%22 stroke-linejoin=%22round%22/%3E%3Cpath d=%22M108 58V88%22 stroke=%22%23e3be6a%22 stroke-width=%225%22 stroke-linecap=%22round%22/%3E%3Ccircle cx=%22108%22 cy=%2292%22 r=%226%22 fill=%22%23e3be6a%22/%3E%3C/svg%3E"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
 /* معرض الصور: كبسولة الأدوات + أحجام + تحديد */
-.gbar{position:fixed;top:60px;left:50%;transform:translateX(-50%);z-index:30;display:flex;gap:6px;justify-content:center;align-items:center;flex-wrap:wrap;margin:4px auto 6px;padding:6px;width:fit-content;max-width:100%;border-radius:99px;background:color-mix(in srgb,var(--card) 88%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--gold1);box-shadow:0 14px 30px -14px rgba(0,0,0,.55)}
-.gbar.act{flex-direction:column;align-items:stretch;border-radius:26px;width:min(calc(100% - 16px),520px);padding:10px 12px;gap:8px}
+.gbar{position:static;display:flex;gap:10px;justify-content:stretch;align-items:stretch;flex-wrap:nowrap;margin:0 0 14px;padding:0;width:100%}
+.gbar.act{flex-direction:column;align-items:stretch;border-radius:26px;padding:10px 12px;gap:8px;background:color-mix(in srgb,var(--card) 88%,transparent);border:1px solid var(--gold1);box-shadow:0 14px 30px -14px rgba(0,0,0,.55)}
+.gbar:not(.act)>.gb{flex:1 1 0;min-width:0;padding:13px 10px;min-height:50px;border-radius:99px;font-weight:700;font-size:16px;background:color-mix(in srgb,var(--card) 88%,transparent);border:1px solid var(--gold1);box-shadow:0 10px 22px -12px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.4)}
 .gbar .gh{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:15px}.gbar .gh .mut{font-size:13px}
 .gbar .gr{display:flex;gap:6px}.gbar .gr .gb{flex:1}
 .gb{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:0;border-radius:99px;padding:9px 16px;min-height:42px;font:inherit;font-size:15px;font-weight:600;cursor:pointer;background:transparent;color:var(--ink);transition:background .2s,transform .15s}
@@ -10,10 +11,10 @@
 .gb.sm{background:rgba(201,164,76,.16);border:1px solid var(--line);padding:7px 10px;font-size:14px}
 .gb.sm.on,.gb.go{background:var(--btn);color:#fff;border-color:transparent}.gb.go.bad{background:var(--bad);color:#fff}
 .gb:disabled{opacity:.4;cursor:default}
-.nimgs.gal{grid-template-columns:repeat(6,1fr);gap:10px}
-.nimgs.gal .ni{grid-column:span 3;aspect-ratio:4/5;border-radius:18px;transition:transform .2s,box-shadow .2s,outline-color .2s;outline:3px solid transparent;outline-offset:-3px}
-.nimgs.gal .ni.s{grid-column:span 2;aspect-ratio:1}.nimgs.gal .ni.l{grid-column:span 6;aspect-ratio:4/3}
-@media(min-width:900px){.nimgs.gal{grid-template-columns:repeat(12,1fr)}.nimgs.gal .ni.s{grid-column:span 2}.nimgs.gal .ni{grid-column:span 3}.nimgs.gal .ni.l{grid-column:span 6}}
+.nimgs.gal{grid-template-columns:repeat(3,1fr);gap:0;border-radius:16px;overflow:hidden}
+.nimgs.gal .ni{grid-column:auto!important;aspect-ratio:1!important;border-radius:0!important;border:2px solid color-mix(in srgb,var(--gold1) 45%,#f3e9d2)!important;box-sizing:border-box;transition:transform .2s,box-shadow .2s,outline-color .2s;outline:3px solid transparent;outline-offset:-3px}
+
+@media(min-width:700px){.nimgs.gal{grid-template-columns:repeat(4,1fr)}}@media(min-width:1000px){.nimgs.gal{grid-template-columns:repeat(5,1fr)}}
 .nimgs.gal.md .ni{cursor:pointer}.nimgs.gal.md .ni img{cursor:pointer}
 .nimgs.gal.md .ni.sel{outline-color:var(--gold1);transform:scale(.97);box-shadow:0 0 0 4px rgba(201,164,76,.3)}
 .ni .ck{position:absolute;top:8px;inset-inline-end:8px;width:28px;height:28px;border-radius:50%;border:2px solid #fff;background:rgba(0,0,0,.4);display:grid;place-items:center;pointer-events:none}
@@ -420,14 +421,14 @@ body.night .pen path[stroke="#111111"]{stroke:#f2f2f2}
 .nimgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;margin-top:12px}.ni{position:relative;aspect-ratio:1;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--bg)}.ni img{width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in}.ni .x{position:absolute;top:4px;inset-inline-start:4px;width:30px;height:30px;background:rgba(0,0,0,.55);color:#fff}.pc [data-a=dlpdf]{color:var(--pri)}
 .ni .x.gd{inset-inline-start:auto;inset-inline-end:4px}
 /* صور: معرض أكبر */
-.nimgs.gal{grid-template-columns:repeat(auto-fill,minmax(min(46%,210px),1fr));gap:12px}.nimgs.gal .ni{aspect-ratio:4/5;border-radius:16px}
+
 
 /* عارض الصور: تنقّل بالسحب والأسهم */
 .iv{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.96);overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none;overscroll-behavior:contain;direction:rtl;font-family:inherit;outline:0}
 .iv-st{position:absolute;inset:0;overflow:hidden}
 .iv-s{position:absolute;inset:0;display:flex;padding:64px 6px 6px;box-sizing:border-box;overflow:hidden;will-change:transform;backface-visibility:hidden;overscroll-behavior:contain}
 .iv.tr .iv-s{transition:transform .28s cubic-bezier(.22,.75,.25,1)}
-.iv-s img{margin:auto;max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;cursor:zoom-in;-webkit-user-drag:none}
+.iv-s img{touch-action:none;transform-origin:center;will-change:transform;margin:auto;max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;cursor:zoom-in;-webkit-user-drag:none}
 .iv-s.z{overflow:auto;-webkit-overflow-scrolling:touch}
 .iv-s.z img{width:230%;max-width:none;max-height:none;cursor:zoom-out}
 .iv-s.err::after{content:'تعذّر تحميل الصورة';margin:auto;color:#fff}
@@ -540,14 +541,13 @@ const GI={del:'<svg viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 1
 let GM='',GF=null;const GS=new Set();
 const gGal=()=>S.gal.filter(Boolean);
 const gTitle={del:'حذف الصور',dl:'تنزيل الصور',ed:'تعديل الحجم والمكان'};
-const gBar=()=>{if(!S.gal.length)return '';if(!GM)return `<button data-a="gmode" data-m="del" class="gb dl">${GI.del}<span>حذف</span></button><button data-a="gmode" data-m="dl" class="gb">${GI.dl}<span>تنزيل</span></button><button data-a="gmode" data-m="ed" class="gb">${GI.ed}<span>تعديل</span></button>`;
- if(GM==='ed'){const g=S.gal.find(x=>x.id===GF),k=g?S.gal.indexOf(g):-1,sz=g?(g.sz||'m'):'';return `<div class="gh"><b>${gTitle.ed}</b><span class="mut">${g?'الصورة '+(k+1)+' من '+S.gal.length:'اضغط على صورة لتحديدها'}</span></div><div class="gr"><button class="gb sm" data-a="gmv" data-d="-1" ${g&&k>0?'':'disabled'}>→ تقديم</button><button class="gb sm" data-a="gmv" data-d="1" ${g&&k<S.gal.length-1?'':'disabled'}>تأخير ←</button></div><div class="gr"><button class="gb sm ${sz==='s'?'on':''}" data-a="gsz" data-s="s" ${g?'':'disabled'}>صغير</button><button class="gb sm ${sz==='m'?'on':''}" data-a="gsz" data-s="m" ${g?'':'disabled'}>وسط</button><button class="gb sm ${sz==='l'?'on':''}" data-a="gsz" data-s="l" ${g?'':'disabled'}>كبير</button></div><div class="gr"><button class="gb sm go" data-a="gmode" data-m="">${GI.ok} تم</button></div>`}
+const gBar=()=>{if(!S.gal.length)return '';if(!GM)return `<button data-a="gmode" data-m="del" class="gb dl">${GI.del}<span>حذف</span></button><button data-a="gmode" data-m="dl" class="gb">${GI.dl}<span>تنزيل</span></button>`;
+
  const n=GS.size;return `<div class="gh"><b>${gTitle[GM]}</b><span class="mut">${n?'المحدد: '+n:'اضغط على الصور لتحديدها'}</span></div><div class="gr"><button class="gb sm" data-a="gall">تحديد الكل</button><button class="gb sm" data-a="gmode" data-m="">إلغاء</button><button class="gb sm go ${GM==='del'?'bad':''}" data-a="gdo" ${n?'':'disabled'}>${GM==='del'?GI.del+' حذف':GI.dl+' تنزيل'}${n?' ('+n+')':''}</button></div>`};
 const gRR=()=>{const a=document.scrollingElement,s=a.scrollTop,m=$('#main'),t=m.scrollTop;render();a.scrollTop=s;m.scrollTop=t};
-const gSlot=()=>{const b=$('#gbarfix'),sl=$('#gslot');if(b&&sl)sl.style.height=(b.offsetHeight+8)+'px'};
-const gMount=()=>{let b=document.getElementById('gbarfix');if(!S.gal.length){if(b)b.remove();return}if(!b){b=document.createElement('div');b.id='gbarfix';document.body.appendChild(b)}b.className='gbar'+(GM?' act':'');b.innerHTML=gBar();gSlot()};
-const gUpd=()=>{gMount();document.querySelectorAll('.gal .ni').forEach(el=>{const id=el.dataset.id;el.classList.toggle('sel',GM==='ed'?GF===id:GS.has(id))})};
-V.imgs=()=>{if(GM==='ed'&&!S.gal.some(x=>x.id===GF))GF=null;[...GS].forEach(id=>{if(!S.gal.some(x=>x.id===id))GS.delete(id)});if(!S.gal.length)GM='';return `<h2>الصور</h2><div class="row"><label class="b addbtn">＋ إضافة صور<input type="file" id="gin" accept="image/*" multiple hidden></label></div>${S.gal.length?`<div id="gslot"></div><div class="nimgs gal ${GM?'md':''}">${S.gal.map(g=>`<div class="ni ${g.sz||'m'} ${(GM==='ed'?GF===g.id:GS.has(g.id))?'sel':''}" data-id="${g.id}" ${GM?`data-a="gsel"`:''}><img data-gi="${g.id}" ${GM?'':`data-a="nizoom" data-id="${g.id}"`} alt="${esc(g.name)}">${GM==='del'||GM==='dl'?`<span class="ck ${GM}">${GI.ok}</span>`:''}</div>`).join('')}</div>`:'<div class="card mut">لا توجد صور. أضف صورًا من الجهاز.</div>'}`};
+const gMount=()=>{const o=document.getElementById('gbarfix');if(o)o.remove();const sl=$('#gslot');if(!sl)return;sl.className='gbar'+(GM?' act':'');sl.innerHTML=gBar()};
+const gUpd=()=>{gMount();document.querySelectorAll('.gal .ni').forEach(el=>{const id=el.dataset.id;el.classList.toggle('sel',GS.has(id))})};
+V.imgs=()=>{[...GS].forEach(id=>{if(!S.gal.some(x=>x.id===id))GS.delete(id)});if(!S.gal.length)GM='';return `<h2>الصور</h2><div class="row"><label class="b addbtn">＋ إضافة صور<input type="file" id="gin" accept="image/*" multiple hidden></label></div>${S.gal.length?`<div id="gslot"></div><div class="nimgs gal ${GM?'md':''}">${S.gal.map(g=>`<div class="ni ${GS.has(g.id)?'sel':''}" data-id="${g.id}" ${GM?`data-a="gsel"`:''}><img data-gi="${g.id}" ${GM?'':`data-a="nizoom" data-id="${g.id}"`} alt="${esc(g.name)}">${GM==='del'||GM==='dl'?`<span class="ck ${GM}">${GI.ok}</span>`:''}</div>`).join('')}</div>`:'<div class="card mut">لا توجد صور. أضف صورًا من الجهاز.</div>'}`};
 AFTER.imgs=()=>{document.querySelectorAll('img[data-gi]').forEach(async im=>{const id=im.dataset.gi;if(NIU[id]){im.src=NIU[id];return}try{const b=await getF('__gimg_'+id);if(b){NIU[id]=URL.createObjectURL(b instanceof Blob?b:new Blob([b]));im.src=NIU[id]}}catch(e){}});const gi=$('#gin');if(gi)gi.onchange=async()=>{const fs=[...gi.files];gi.value='';if(!fs.length)return;toast('جارٍ إضافة الصور...');let ok=0;for(const f of fs){try{const id=uid();await putF('__gimg_'+id,await nimgBlob(f));S.gal.unshift({id,name:(f.name||'صورة').replace(/\.[^.]+$/,''),t:Date.now()});ok++}catch(er){}}save();render();toast(ok?'أُضيفت '+ok+' صورة':'تعذّرت إضافة الصور')}};
 {const _ai=AFTER.imgs;AFTER.imgs=()=>{_ai();gMount()}}
 let schedView=localStorage.getItem('mcsv')||'days',schedDay=null,notesSubj=null,cardTab='study',pdfFilter='',cardIdx=0,cardFlip=false,cfl=false;
@@ -836,7 +836,7 @@ async gdl(e){const g=S.gal.find(x=>x.id===e.dataset.id);if(!g)return;try{const b
  async gdel(e){const id=e.dataset.id;if(!sure('g'+id))return;S.gal=S.gal.filter(x=>x.id!==id);save();try{await delF('__gimg_'+id)}catch(er){}if(NIU[id]){try{URL.revokeObjectURL(NIU[id])}catch(er){}delete NIU[id]}render()},
  dlpdf(e){dlPdf(e.dataset.id)},
  gmode(e){const m=e.dataset.m||'';GM=(GM===m?'':m);GS.clear();GF=null;gRR()},
- gsel(e){const id=e.dataset.id;if(GM==='ed'){GF=GF===id?null:id}else{GS.has(id)?GS.delete(id):GS.add(id)}gUpd()},
+ gsel(e){const id=e.dataset.id;GS.has(id)?GS.delete(id):GS.add(id);gUpd()},
  gall(){const all=S.gal.length===GS.size;GS.clear();if(!all)S.gal.forEach(g=>GS.add(g.id));gUpd()},
  gmv(e){const k=S.gal.findIndex(x=>x.id===GF),d=+e.dataset.d,j=k+d;if(k<0||j<0||j>=S.gal.length)return;const t=S.gal[k];S.gal[k]=S.gal[j];S.gal[j]=t;save();gRR();setTimeout(()=>{const el=document.querySelector('.gal .ni.sel');if(el)el.scrollIntoView({block:'nearest',behavior:'smooth'})},50)},
  gsz(e){const g=S.gal.find(x=>x.id===GF);if(!g)return;g.sz=e.dataset.s;save();gRR()},
@@ -1010,7 +1010,7 @@ function imgView(el){
  const root=el.closest('.nimgs')||document;
  const items=[...root.querySelectorAll('img[data-a="nizoom"]')].map(i=>({id:i.dataset.id,k:i.hasAttribute('data-gi')?'__gimg_':'__nimg_',alt:i.getAttribute('alt')||''}));
  const n=items.length;if(!n)return;
- let cur=Math.max(0,items.findIndex(x=>x.id===el.dataset.id)),dx=0,W=0,zm=false,drag=false,moved=false,x0=0,y0=0,lx=0,lt=0,vx=0,tg=null,raf=0,wt=0;
+ let cur=Math.max(0,items.findIndex(x=>x.id===el.dataset.id)),dx=0,W=0,zm=false,drag=false,moved=false,x0=0,y0=0,lx=0,lt=0,vx=0,tg=null,raf=0,wt=0,sc=1,tx=0,ty=0,pts=new Map(),pinching=false,pL=null,psc=1,ptx=0,pty=0,pd0=1,pm0={x:0,y:0},panL=null,tapT=0,tapX=0,tapY=0;
  const sl=new Map();
  const urlOf=it=>NIU[it.id]?Promise.resolve(NIU[it.id]):(it.p||(it.p=getF(it.k+it.id).then(b=>{if(!b)throw 0;return NIU[it.id]||(NIU[it.id]=URL.createObjectURL(b instanceof Blob?b:new Blob([b])))})));
  const mkb=(c,t,l)=>{const b=document.createElement('button');b.type='button';b.className=c;b.textContent=t;b.setAttribute('aria-label',l);return b};
@@ -1029,31 +1029,45 @@ function imgView(el){
   for(let i=cur-1;i<=cur+1;i++)if(i>=0&&i<n&&!sl.has(i))mk(i);
   cnt.textContent=(cur+1)+' / '+n;nx.disabled=cur>=n-1;pv.disabled=cur<=0;
   [cur-2,cur+2].forEach(j=>{if(j>=0&&j<n)urlOf(items[j]).then(warm).catch(()=>{})})};
- const unz=()=>{if(!zm)return;zm=false;o.style.touchAction='none';const s=sl.get(cur);if(s)s.classList.remove('z')};
- const zt=()=>{const s=sl.get(cur);if(!s)return;zm=!zm;s.classList.toggle('z',zm);o.style.touchAction=zm?'auto':'none';
-  if(zm){const m=s.scrollWidth-s.clientWidth;s.scrollLeft=getComputedStyle(s).direction==='rtl'?-m/2:m/2;s.scrollTop=(s.scrollHeight-s.clientHeight)/2}};
+ const curImg=()=>{const q=sl.get(cur);return q?q.querySelector('img'):null};
+ const lay=()=>{const im=curImg();if(!im)return null;const r=im.getBoundingClientRect();return{im,Cx:r.left+r.width/2-tx,Cy:r.top+r.height/2-ty,w:im.offsetWidth,h:im.offsetHeight}};
+ const clampT=L=>{if(!L)return;const mx=Math.max(0,(L.w*sc-o.clientWidth)/2),my=Math.max(0,(L.h*sc-o.clientHeight)/2);tx=Math.min(mx,Math.max(-mx,tx));ty=Math.min(my,Math.max(-my,ty))};
+ const setT=()=>{const im=curImg();if(im)im.style.transform=sc>1.001?'translate('+tx+'px,'+ty+'px) scale('+sc+')':'';zm=sc>1.001};
+ const zoomTo=(ns,mx,my,ax,ay,bs,L)=>{if(!L)return;const px=(ax-L.Cx-bs.tx)/bs.sc,py=(ay-L.Cy-bs.ty)/bs.sc;sc=Math.min(6,Math.max(1,ns));if(sc<=1.001){sc=1;tx=ty=0}else{tx=mx-L.Cx-px*sc;ty=my-L.Cy-py*sc;clampT(L)}setT()};
+ const unz=()=>{const im=curImg();sc=1;tx=ty=0;zm=false;if(im){im.style.transition='';im.style.transform=''}};
+ const dbl=e=>{const now=performance.now();if(now-tapT<320&&Math.hypot(e.clientX-tapX,e.clientY-tapY)<30){tapT=0;const im=curImg();if(im)im.style.transition='transform .22s ease';const L=lay();if(zm)zoomTo(1,e.clientX,e.clientY,e.clientX,e.clientY,{sc,tx,ty},L);else zoomTo(2.5,e.clientX,e.clientY,e.clientX,e.clientY,{sc:1,tx:0,ty:0},L)}else{tapT=now;tapX=e.clientX;tapY=e.clientY}};
  const go=i=>{dx=0;tr(1);if(i>=0&&i<n&&i!==cur){unz();cur=i;sync()}apply()};
  function cl(){cancelAnimationFrame(raf);document.removeEventListener('keydown',kd);window.removeEventListener('resize',rs);o.remove()}
  function kd(e){const k=e.key;if(k==='Escape')cl();else if(k==='ArrowLeft'){e.preventDefault();go(cur+1)}else if(k==='ArrowRight'){e.preventDefault();go(cur-1)}}
- function rs(){W=o.clientWidth;tr(0);apply()}
+ function rs(){W=o.clientWidth;unz();tr(0);apply()}
  o.addEventListener('pointerdown',e=>{
-  if(!e.isPrimary||e.target.closest('button'))return;
+  if(e.target.closest('button'))return;
+  const im0=curImg();if(im0)im0.style.transition='none';
+  pts.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  if(pts.size===2){const v=[...pts.values()],a=v[0],b=v[1];pinching=true;tg=null;drag=false;moved=true;if(dx){dx=0;tr(1);apply()}pL=lay();psc=sc;ptx=tx;pty=ty;pd0=Math.hypot(a.x-b.x,a.y-b.y)||1;pm0={x:(a.x+b.x)/2,y:(a.y+b.y)/2};return}
+  if(!e.isPrimary||pts.size>2)return;
   tg=e.target;x0=lx=e.clientX;y0=e.clientY;lt=performance.now();vx=0;dx=0;moved=false;drag=!zm&&n>1;
+  panL=zm?lay():null;ptx=tx;pty=ty;
   if(drag){tr(0);try{o.setPointerCapture(e.pointerId)}catch(er){}}
  });
  o.addEventListener('pointermove',e=>{
+  if(pts.has(e.pointerId))pts.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  if(pinching){if(pts.size<2)return;const v=[...pts.values()],a=v[0],b=v[1],d=Math.hypot(a.x-b.x,a.y-b.y),m={x:(a.x+b.x)/2,y:(a.y+b.y)/2};zoomTo(psc*d/pd0,m.x,m.y,pm0.x,pm0.y,{sc:psc,tx:ptx,ty:pty},pL);return}
   if(tg===null||!e.isPrimary)return;
   const d=e.clientX-x0;
   if(!moved){if(Math.abs(d)<6&&Math.abs(e.clientY-y0)<6)return;moved=true}
+  if(zm){tx=ptx+(e.clientX-x0);ty=pty+(e.clientY-y0);clampT(panL);setT();return}
   if(!drag)return;
   const t=performance.now(),dt=Math.max(1,t-lt);vx=vx*.6+((e.clientX-lx)/dt)*.4;lx=e.clientX;lt=t;
   dx=((d<0&&cur===0)||(d>0&&cur===n-1))?d*.3:d;
   if(!raf)raf=requestAnimationFrame(()=>{raf=0;apply()});
  });
  const end=e=>{
+  pts.delete(e.pointerId);
+  if(pinching){if(pts.size<2){pinching=false;tg=null;drag=false;if(sc<1.05){const im=curImg();if(im)im.style.transition='transform .2s ease';sc=1;tx=ty=0;setT()}}return}
   if(tg===null||!e.isPrimary)return;
   const t=tg;tg=null;
-  if(!moved){drag=false;if(e.type==='pointerup'){if(t.tagName==='IMG')zt();else cl()}return}
+  if(!moved){drag=false;if(e.type==='pointerup'){if(t.tagName==='IMG')dbl(e);else cl()}return}
   if(!drag)return;
   drag=false;cancelAnimationFrame(raf);raf=0;
   const th=W*.2;let s=0;
@@ -1061,7 +1075,7 @@ function imgView(el){
   go(cur+s);
  };
  o.addEventListener('pointerup',end);o.addEventListener('pointercancel',end);
- o.addEventListener('wheel',e=>{if(zm)return;e.preventDefault();const now=Date.now();if(now-wt<320)return;const d=e.deltaY||e.deltaX;if(Math.abs(d)<8)return;wt=now;go(cur+(d>0?1:-1))},{passive:false});
+ o.addEventListener('wheel',e=>{if(e.ctrlKey||zm){e.preventDefault();const L=lay();zoomTo(sc*Math.exp(-e.deltaY*.01),e.clientX,e.clientY,e.clientX,e.clientY,{sc,tx,ty},L);return}e.preventDefault();const now=Date.now();if(now-wt<320)return;const d=e.deltaY||e.deltaX;if(Math.abs(d)<8)return;wt=now;go(cur+(d>0?1:-1))},{passive:false});
  x.onclick=cl;nx.onclick=()=>go(cur+1);pv.onclick=()=>go(cur-1);
  document.addEventListener('keydown',kd);window.addEventListener('resize',rs);
  document.body.appendChild(o);W=o.clientWidth;sync();apply();
@@ -1072,5 +1086,5 @@ setTimeout(()=>{if(navigator.onLine)ensurePdfJs().catch(()=>{})},2500);
 
 </script>
 
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js',{scope:'./'}).catch(function(){})})}</script>
+<script>if('serviceWorker'in navigator){addEventListener('load',function(){navigator.serviceWorker.register('./sw.js',{scope:'./'}).catch(function(){})})}</script>
 </body></html>

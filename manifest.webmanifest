@@ -2,7 +2,7 @@
   "id": "./index.html",
   "name": "رفيق",
   "short_name": "رفيق",
-  "description": "رفيق الدراسة: مهام وجدول وملاحظات وPDF وبطاقات ومعدّل، يعمل بدون إنترنت.",
+  "description": "رفيق الدراسة الطبي",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
